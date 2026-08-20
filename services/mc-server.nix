@@ -1,0 +1,64 @@
+{
+  services.minecraft-server = {
+    enable = true;
+    declarative = true;
+    eula = true;
+    whitelist = {
+      mismna = "21d13993-dee0-4650-85e7-1055d69e8313";
+    };
+    serverProperties = {
+      accepts-transfers = true;
+      allow-flight = false;
+      broadcast-console-to-ops = true;
+      broadcast-rcon-to-ops = true;
+      chat-spam-threshold-seconds = 0;
+      command-spam-threshold-seconds = 0;
+      difficulty = "normal";
+      enable-code-of-conduct = false;
+      enable-status = true;
+      enforce-secure-profile = true; #!!
+      enforce-whitelist = true;
+      entity-broadcast-range-percentage = 100;
+      force-gamemode = true;
+      gamemode = "survival";
+      generate-structures = true;
+      hardcore = false;
+      hide-online-players = false;
+      level-name = "the world ruled by kaz";
+      level-seed = 2048005618087379093;
+      level-type = "normal";
+      log-ips = true;
+      # management-server-allowed-origins = ;
+      management-server-enabled = true;
+      management-server-host = "0.0.0.0";
+      management-server-port = 12300;
+      # management-server-secret = "[ minecraft00 ]";
+      management-server-tls-enabled = false;
+      # management-server-tls-keystore = ;
+      # management-server-tls-keystore-password = ;
+      max-chained-neighbor-updates = 1000000;
+      max-players = 20;
+      max-tick-time = 60000;
+      max-world-size = 29999984;
+      motd = "the world ruled by kaz";
+      online-mode = true;
+      op-permission-level = 4;
+      pause-when-empty-seconds = 60;
+      player-idle-timeout = 0;
+      prevent-proxy-connections = false;
+      "query.port" = 25565;
+      rate-limit = 0;
+      enable-rcon = true;
+      "rcon.password" = "kaz wa3r!";
+      "rcon.port" = 12333;
+      # server-ip = ;
+      server-port = 12345;
+      simulation-distance = 12;
+      spawn-protection = 0;
+      status-heartbeat-interval = 0;
+      sync-chunk-writes = true;
+      view-distance = 16;
+      white-list = true;
+    };
+  };
+}
