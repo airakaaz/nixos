@@ -1,3 +1,5 @@
+{ hermes-agent, ... }:
+
 {
   imports = [
     # system
@@ -24,6 +26,7 @@
   };
 
   home-manager = {
+    extraSpecialArgs = { inherit hermes-agent; };
     useGlobalPkgs = true;
     useUserPackages = true;
     users.kaz = import /home/kaz/.config/home-manager/home.nix;

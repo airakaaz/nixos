@@ -7,6 +7,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hermes-agent = {
+      url = "github:NousResearch/hermes-agent";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -14,6 +18,7 @@
       self,
       nixpkgs,
       home-manager,
+      hermes-agent,
       ...
     }:
 
@@ -21,7 +26,10 @@
       nixosConfigurations = {
         phantom = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs.hostname = "phantom";
+          specialArgs = {
+            hostname = "phantom";
+            inherit hermes-agent;
+          };
           modules = [
             ./configuration.nix
             ./hosts/phantom/imports.nix

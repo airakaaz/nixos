@@ -13,5 +13,6 @@
       "kvm"
     ];
     shell = pkgs.fish;
+    linger = true;
   };
 }
