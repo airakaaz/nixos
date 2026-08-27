@@ -1,4 +1,4 @@
-{ hermes-agent, ... }:
+{ ... }:
 
 {
   imports = [
@@ -23,14 +23,6 @@
 
   nix.gc = {
     automatic = true;
-  };
-
-  home-manager = {
-    extraSpecialArgs = { inherit hermes-agent; };
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users.kaz = import /home/kaz/.config/home-manager/home.nix;
-    backupFileExtension = "hm.bak";
   };
 
   # Set your time zone.
