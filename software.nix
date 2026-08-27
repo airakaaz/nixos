@@ -15,6 +15,7 @@
     pciutils
     zip
     unzip
+    jq
   ];
 
   programs = {
