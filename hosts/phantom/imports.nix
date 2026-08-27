@@ -13,12 +13,12 @@
     # monitoring
     ../../services/uptime-kuma.nix
     ../../services/prometheus-exporter.nix
-    ../../services/prometheus-scraper.nix
-    ../../services/grafana.nix
+    # ../../services/prometheus-scraper.nix
+    # ../../services/grafana.nix
 
     # services
     ../../services/adguardhome.nix
-    ../../services/aira.kaaz.nix
+    # ../../services/aira.kaaz.nix
     ../../services/immich.nix
     ../../services/jellyfin.nix
     ../../services/qbittorrent.nix
