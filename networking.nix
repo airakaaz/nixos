@@ -1,8 +1,8 @@
-{ ... }:
+{ hostname, ... }:
 
 {
   networking = {
-    hostName = "phantom";
+    hostName = hostname;
 
     networkmanager.enable = true;
 
