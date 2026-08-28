@@ -7,13 +7,6 @@
     };
   };
 
-  services.tailscale.serve.services.jellyfin = {
-    endpoints = {
-      "tcp:80" = "http://localhost:8096";
-    };
-    advertised = true;
-  };
-
   services.caddy.virtualHosts."watch.kaaz.top".extraConfig = ''
     reverse_proxy localhost:8096
   '';

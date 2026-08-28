@@ -7,10 +7,8 @@
     };
   };
 
-  services.tailscale.serve.services.kuma = {
-    endpoints = {
-      "tcp:80" = "http://localhost:3001";
-    };
-    advertised = true;
-  };
+  services.caddy.virtualHosts."kuma.kaaz.top".extraConfig = ''
+    tls internal
+    reverse_proxy localhost:3001
+  '';
 }

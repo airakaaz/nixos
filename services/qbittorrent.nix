@@ -5,10 +5,8 @@
     webuiPort = 8070;
   };
 
-  services.tailscale.serve.services.torrent = {
-    endpoints = {
-      "tcp:80" = "http://localhost:8070";
-    };
-    advertised = true;
-  };
+  services.caddy.virtualHosts."qbt.kaaz.top".extraConfig = ''
+    tls internal
+    reverse_proxy localhost:8070
+  '';
 }

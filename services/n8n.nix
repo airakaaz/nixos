@@ -11,10 +11,8 @@
     openFirewall = false;
   };
 
-  services.tailscale.serve.services.n8n = {
-    endpoints = {
-      "tcp:80" = "http://localhost:5678";
-    };
-    advertised = true;
-  };
+  services.caddy.virtualHosts."n8n.kaaz.top".extraConfig = ''
+    tls internal
+    reverse_proxy localhost:5678
+  '';
 }

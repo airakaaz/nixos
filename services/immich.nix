@@ -8,13 +8,6 @@
     ];
   };
 
-  services.tailscale.serve.services.immich = {
-    endpoints = {
-      "tcp:80" = "http://localhost:2283";
-    };
-    advertised = true;
-  };
-
   services.caddy.virtualHosts."immich.kaaz.top".extraConfig = ''
     reverse_proxy localhost:2283
   '';

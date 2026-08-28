@@ -1,6 +1,6 @@
 {
   services.tailscale = {
     enable = true;
-    serve.enable = true;
+    # serve.enable = true;
   };
 }

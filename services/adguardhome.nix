@@ -4,10 +4,8 @@
     port = 3000;
   };
 
-  services.tailscale.serve.services.adguard = {
-    endpoints = {
-      "tcp:80" = "http://localhost:3000";
-    };
-    advertised = true;
-  };
+  services.caddy.virtualHosts."dns.kaaz.top".extraConfig = ''
+    tls internal
+    reverse_proxy localhost:3000
+  '';
 }
