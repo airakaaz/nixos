@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, hostname, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -108,6 +108,8 @@
     nrb = "sudo nixos-rebuild boot";
     nfu = "nix flake update";
     ncg = "sudo nix-collect-garbage";
+
+    hms = "home-manager switch --flake ~/.config/home-manager#kaz-${hostname}";
 
     sstart = "systemctl start";
     resstart = "systemctl restart";
