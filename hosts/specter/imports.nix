@@ -9,7 +9,7 @@
     ../../services/grafana.nix
 
     # services
-    # ../../services/adguardhome.nix
+    ../../services/adguardhome.nix
     ../../services/aira.kaaz.nix
     ../../services/cloudflare-ddns.nix
   ];
