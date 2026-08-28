@@ -24,6 +24,7 @@
     ../../services/qbittorrent.nix
     ../../services/vaultwarden.nix
     ../../services/cloudflare-ddns.nix
+    ../../services/smartd.nix
     # ../../services/n8n.nix
     # ../../services/llama-cpp.nix
 
