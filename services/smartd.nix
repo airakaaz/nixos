@@ -9,10 +9,6 @@
       {
         device = "/dev/nvme0";
       }
-      {
-        device = "/dev/sda";
-        options = "-d sat";
-      }
     ];
 
     notifications.systembus-notify.enable = true;
