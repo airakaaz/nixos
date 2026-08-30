@@ -16,6 +16,8 @@
     zip
     unzip
     jq
+    smartmontools
+    lynis
   ];
 
   programs = {
