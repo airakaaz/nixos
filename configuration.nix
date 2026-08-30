@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   imports = [
     # system
@@ -14,6 +12,7 @@
     ./services/openssh.nix
     ./services/tailscale.nix
     ./services/caddy.nix
+    ./services/israel-ip-blocker.nix
   ];
 
   nix.settings.experimental-features = [
