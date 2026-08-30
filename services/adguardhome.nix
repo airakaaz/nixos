@@ -48,7 +48,7 @@
         }
         {
           domain = "vault.kaaz.top";
-          answer = "100.64.0.1";
+          answer = "100.64.0.2";
           enabled = true;
         }
         {

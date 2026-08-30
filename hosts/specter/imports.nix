@@ -12,5 +12,6 @@
     ../../services/adguardhome.nix
     ../../services/aira.kaaz.nix
     ../../services/cloudflare-ddns.nix
+    ../../services/vaultwarden.nix
   ];
 }
