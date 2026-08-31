@@ -75,7 +75,7 @@
           enabled = true;
         }
         {
-          domain = "kuma.kaaz.top";
+          domain = "up.kaaz.top";
           answer = "100.64.0.2";
           enabled = true;
         }

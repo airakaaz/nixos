@@ -7,7 +7,7 @@
     };
   };
 
-  services.caddy.virtualHosts."kuma.kaaz.top".extraConfig = ''
+  services.caddy.virtualHosts."up.kaaz.top".extraConfig = ''
     tls internal
     reverse_proxy localhost:3001
   '';
