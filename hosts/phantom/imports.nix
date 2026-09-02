@@ -11,7 +11,6 @@
     ../../lab.nix
 
     # monitoring
-    ../../services/uptime-kuma.nix
     ../../services/prometheus-exporter.nix
 
     # services
