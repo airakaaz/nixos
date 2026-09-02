@@ -7,6 +7,7 @@
     ./networking.nix
     ./software.nix
     ./services/cockpit.nix
+    ./services/glances.nix
 
     # connection
     ./services/openssh.nix
