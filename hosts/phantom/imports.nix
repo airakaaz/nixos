@@ -22,7 +22,7 @@
     ../../services/smartd.nix
 
     # backup
-    ../../services/restic.nix
+    ./backup.nix
 
     # local
     ../../services/keyd.nix

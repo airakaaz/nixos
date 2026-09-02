@@ -14,5 +14,8 @@
     ../../services/homepage.nix
     ../../services/cloudflare-ddns.nix
     ../../services/vaultwarden.nix
+
+    # backup
+    ./backup.nix
   ];
 }
