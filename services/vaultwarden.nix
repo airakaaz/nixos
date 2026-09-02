@@ -17,8 +17,10 @@
 
   services.fail2ban.jails.vaultwarden = {
     filter = {
-      failregex = ".*Username or password is incorrect\\. Try again\\. IP: <HOST>.*";
-      journalmatch = "_SYSTEMD_UNIT=vaultwarden.service";
+      Definition = {
+        failregex = ".*Username or password is incorrect\\. Try again\\. IP: <HOST>.*";
+        journalmatch = "_SYSTEMD_UNIT=vaultwarden.service";
+      };
     };
     settings = {
       findtime = 15 * 60;
