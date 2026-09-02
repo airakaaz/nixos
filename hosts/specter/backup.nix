@@ -29,6 +29,10 @@
       ".cache"
     ];
 
+    pruneOpts = [
+      "--keep-last 7"
+    ];
+
     timerConfig = {
       OnCalendar = "03:00";
       Persistent = true;
