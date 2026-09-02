@@ -15,6 +15,18 @@
     environmentFile = "/var/lib/vaultwarden/vaultwarden.env";
   };
 
+  services.fail2ban.jails.vaultwarden = {
+    filter = {
+      failregex = ".*Username or password is incorrect\\. Try again\\. IP: <HOST>.*";
+      journalmatch = "_SYSTEMD_UNIT=vaultwarden.service";
+    };
+    settings = {
+      findtime = 15 * 60;
+      maxretry = 5;
+      bantime = 1 * 60 * 60;
+    };
+  };
+
   services.caddy.virtualHosts."vault.kaaz.top".extraConfig = ''
     encode zstd gzip
     reverse_proxy localhost:8222 {

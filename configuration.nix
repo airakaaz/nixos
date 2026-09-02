@@ -8,6 +8,7 @@
     ./software.nix
     ./services/cockpit.nix
     ./services/glances.nix
+    ./services/fail2ban.nix
 
     # connection
     ./services/openssh.nix
