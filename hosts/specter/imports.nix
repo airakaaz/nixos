@@ -11,6 +11,7 @@
     # services
     ../../services/adguardhome.nix
     ../../services/aira.kaaz.nix
+    ../../services/homepage.nix
     ../../services/cloudflare-ddns.nix
     ../../services/vaultwarden.nix
   ];

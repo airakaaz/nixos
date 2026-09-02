@@ -79,6 +79,11 @@
           answer = "100.64.0.2";
           enabled = true;
         }
+        {
+          domain = "home.kaaz.top";
+          answer = "100.64.0.2";
+          enabled = true;
+        }
       ];
       filters = [
         {
