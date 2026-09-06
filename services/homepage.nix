@@ -7,6 +7,7 @@
 
     settings = {
       title = "aira.kaaz";
+      favicon = "https://aira.kaaz.top/assets/kaz.svg";
       headerStyle = "clean";
       statusStyle = "dot";
       useEqualHeights = true;
@@ -17,39 +18,43 @@
       color = "neutral";
       layout = [
         {
-          Phantom = {
-            header = false;
+          Servers = {
+            tab = "Home";
             style = "row";
-            columns = 5;
+            columns = 2;
+          };
+        }
+        {
+          Phantom = {
+            tab = "Servers";
+            style = "row";
+            columns = 2;
           };
         }
         {
           Specter = {
-            header = false;
+            tab = "Servers";
             style = "row";
-            columns = 5;
-          };
-        }
-        {
-          DNS = {
-            style = "row";
-            columns = 3;
+            columns = 2;
           };
         }
         {
           Monitoring = {
+            tab = "Home";
             style = "row";
             columns = 1;
           };
         }
         {
           Services = {
+            tab = "Home";
             style = "row";
             columns = 2;
           };
         }
         {
           "Google Workspace" = {
+            tab = "Home";
             iconsOnly = true;
           };
         }
@@ -60,7 +65,15 @@
           };
         }
         {
+          Management = {
+            tab = "Home";
+            style = "row";
+            columns = 3;
+          };
+        }
+        {
           Torrenting = {
+            tab = "Home";
             style = "row";
             columns = 2;
           };
@@ -70,14 +83,48 @@
 
     services = [
       {
-        Specter = [
+        Servers = [
           {
-            Info = {
+            Specter = {
               widget = {
                 type = "glances";
                 url = "http://specter:55000";
                 version = 4;
                 metric = "info";
+              };
+            };
+          }
+          {
+            Phantom = {
+              widget = {
+                type = "glances";
+                url = "http://phantom:55000";
+                version = 4;
+                metric = "info";
+              };
+            };
+          }
+        ];
+      }
+      {
+        Specter = [
+          # {
+          #   Info = {
+          #     widget = {
+          #       type = "glances";
+          #       url = "http://specter:55000";
+          #       version = 4;
+          #       metric = "info";
+          #     };
+          #   };
+          # }
+          {
+            Processes = {
+              widget = {
+                type = "glances";
+                url = "http://specter:55000";
+                version = 4;
+                metric = "process";
               };
             };
           }
@@ -112,7 +159,7 @@
             };
           }
           {
-            "/" = {
+            "NVMe space" = {
               widget = {
                 type = "glances";
                 url = "http://specter:55000";
@@ -121,17 +168,37 @@
               };
             };
           }
+          {
+            "NVMe I/O" = {
+              widget = {
+                type = "glances";
+                url = "http://specter:55000";
+                version = 4;
+                metric = "disk:sda";
+              };
+            };
+          }
         ];
       }
       {
         Phantom = [
+          # {
+          #   Info = {
+          #     widget = {
+          #       type = "glances";
+          #       url = "http://phantom:55000";
+          #       version = 4;
+          #       metric = "info";
+          #     };
+          #   };
+          # }
           {
-            Info = {
+            Processes = {
               widget = {
                 type = "glances";
                 url = "http://phantom:55000";
                 version = 4;
-                metric = "info";
+                metric = "process";
               };
             };
           }
@@ -166,7 +233,7 @@
             };
           }
           {
-            "/" = {
+            "NVMe space" = {
               widget = {
                 type = "glances";
                 url = "http://phantom:55000";
@@ -175,10 +242,79 @@
               };
             };
           }
+          {
+            "HDD space" = {
+              widget = {
+                type = "glances";
+                url = "http://phantom:55000";
+                version = 4;
+                metric = "fs:/media/storage";
+              };
+            };
+          }
+          {
+            "NVMe I/O" = {
+              widget = {
+                type = "glances";
+                url = "http://phantom:55000";
+                version = 4;
+                metric = "disk:nvme0n1";
+              };
+            };
+          }
+          {
+            "HDD I/O" = {
+              widget = {
+                type = "glances";
+                url = "http://phantom:55000";
+                version = 4;
+                metric = "disk:sda";
+              };
+            };
+          }
         ];
       }
       {
-        DNS = [
+        Management = [
+          {
+            Tailscale = {
+              href = "https://console.tailscale.com";
+              icon = "si-tailscale";
+            };
+          }
+          {
+            Cloudflare = {
+              href = "https://dash.cloudflare.com";
+              icon = "si-cloudflare-#F38020";
+            };
+          }
+
+          {
+            "Oracle Cloud" = {
+              href = "https://cloud.oracle.com";
+              icon = "https://1000logos.net/wp-content/uploads/2024/08/Oracle-Cloud-Emblem.png";
+            };
+          }
+        ];
+      }
+      {
+        Monitoring = [
+          {
+            "Uptime Kuma" = {
+              href = "https://up.kaaz.top/status/main";
+              icon = "si-uptimekuma-#5CDD8B";
+              # description = "Service monitoring";
+              widget = {
+                type = "uptimekuma";
+                url = "https://up.kaaz.top/";
+                slug = "main";
+              };
+            };
+          }
+        ];
+      }
+      {
+        Services = [
           {
             "AdGuard Home (phantom)" = {
               href = "https://p.dns.kaaz.top";
@@ -205,32 +341,6 @@
               };
             };
           }
-          {
-            "Cloudflare Dashboard" = {
-              href = "https://dash.cloudflare.com";
-              icon = "si-cloudflare-#F38020";
-            };
-          }
-        ];
-      }
-      {
-        Monitoring = [
-          {
-            "Uptime Kuma" = {
-              href = "https://up.kaaz.top/status/main";
-              icon = "si-uptimekuma-#5CDD8B";
-              # description = "Service monitoring";
-              widget = {
-                type = "uptimekuma";
-                url = "https://up.kaaz.top/";
-                slug = "main";
-              };
-            };
-          }
-        ];
-      }
-      {
-        Services = [
           {
             Jellyfin = {
               href = "https://watch.kaaz.top";
@@ -278,15 +388,15 @@
             qBittorrent = {
               href = "https://qbt.kaaz.top";
               icon = "si-qbittorrent-#2F67BA";
-              # widget = {
-              #   type = "qbittorrent";
-              #   url = "https://qbt.kaaz.top";
-              #   key = "{{HOMEPAGE_VAR_QBT_KEY}}";
-              # };
+              widget = {
+                type = "qbittorrent";
+                url = "https://qbt.kaaz.top";
+                key = "{{HOMEPAGE_VAR_QBT_KEY}}";
+              };
             };
           }
           {
-            ext = {
+            Ext = {
               href = "https://ext.to";
               icon = "https://ext.to/favicon.ico";
             };
@@ -429,6 +539,7 @@
           {
             "Landing Page" = [
               {
+                icon = "https://aira.kaaz.top/assets/kaz.svg";
                 abbr = "KA";
                 href = "https://aira.kaaz.top";
               }
@@ -437,6 +548,7 @@
           {
             GitHub = [
               {
+                icon = "si-github";
                 abbr = "GH";
                 href = "https://github.com/airakaaz";
               }
@@ -445,14 +557,25 @@
           {
             Instagram = [
               {
+                icon = "si-instagram";
                 abbr = "IG";
                 href = "https://instagram.com/kizo_aria";
               }
             ];
           }
           {
+            "NixOS Search" = [
+              {
+                icon = "si-nixos";
+                abbr = "NX";
+                href = "https://search.nixos.org/options?channel=unstable";
+              }
+            ];
+          }
+          {
             "Arch Wiki" = [
               {
+                icon = "si-archlinux";
                 abbr = "AR";
                 href = "https://wiki.archlinux.org/";
               }
@@ -461,6 +584,7 @@
           {
             "NixOS Wiki" = [
               {
+                icon = "si-nixos";
                 abbr = "NX";
                 href = "https://wiki.nixos.org/";
               }
