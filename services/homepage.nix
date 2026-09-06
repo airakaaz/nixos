@@ -373,6 +373,13 @@
             };
           }
           {
+            Stirling = {
+              href = "https://pdf.kaaz.top";
+              icon = "sh-stirling-pdf";
+              # description = "PDF editor";
+              siteMonitor = "https://pdf.kaaz.top";
+            };
+          }{
             Vaultwarden = {
               href = "https://vault.kaaz.top";
               icon = "si-vaultwarden";

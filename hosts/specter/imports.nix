@@ -14,6 +14,7 @@
     ../../services/homepage.nix
     ../../services/cloudflare-ddns.nix
     ../../services/vaultwarden.nix
+    ../../services/stirling-pdf.nix
 
     # backup
     ./backup.nix
