@@ -3,7 +3,7 @@
     enable = true;
     hardwareAcceleration = {
       enable = true;
-      device = "/dev/dri/renderD129";
+      device = "/dev/dri/renderD128";
     };
   };
 
