@@ -9,7 +9,6 @@
     libvirtd = {
       enable = true;
       dbus.enable = true;
-      allowedBridges = [ "virbr1" ];
 
       qemu = {
         package = pkgs.qemu_kvm;

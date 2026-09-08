@@ -16,6 +16,9 @@
     ../../services/vaultwarden.nix
     ../../services/stirling-pdf.nix
 
+    # virtualization
+    ../../virtualization/docker.nix
+
     # backup
     ./backup.nix
   ];

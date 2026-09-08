@@ -6,9 +6,10 @@
     ../../drives.nix
     ../../nvidia.nix
 
-    # other
-    ../../virt.nix
-    ../../lab.nix
+    # virtualization
+    ../../virtualization/docker.nix
+    ../../virtualization/libvirt.nix
+    ../../virtualization/lab.nix
 
     # monitoring
     ../../services/prometheus-exporter.nix
