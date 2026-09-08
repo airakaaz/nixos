@@ -1,10 +1,9 @@
 {
-  services.stirling-pdf = {
-    enable = true;
-    environment = {
-      SERVER_ADDRESS = "127.0.0.1";
-      SERVER_PORT = 8081;
-    };
+  virtualisation.oci-containers.containers.stirling-pdf = {
+    image = "stirlingtools/stirling-pdf:latest";
+    ports = [ "127.0.0.1:8081:8080" ];
+    volumes = [ "/var/lib/stirling-pdf:/configs" ];
+    autoStart = true;
   };
 
   services.caddy.virtualHosts."pdf.kaaz.top".extraConfig = ''

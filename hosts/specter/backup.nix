@@ -18,6 +18,7 @@
       "/var/lib/uptime-kuma"
       "/var/lib/AdGuardHome"
       "/var/lib/caddy"
+      "/var/lib/stirling-pdf"
     ];
 
     extraBackupArgs = [
