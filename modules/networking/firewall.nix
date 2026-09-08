@@ -1,17 +1,12 @@
-{ hostname, ... }:
-
 {
   networking = {
-    hostName = hostname;
-
-    networkmanager.enable = true;
-
     nftables.enable = true;
     firewall = {
       enable = true;
 
       trustedInterfaces = [ "tailscale0" ];
 
+      # cloudflare proxy IP ranges
       extraInputRules = ''
         ip saddr {
           103.21.244.0/22,

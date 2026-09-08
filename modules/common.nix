@@ -1,20 +1,25 @@
 {
   imports = [
     # system
-    ./boot.nix
-    ./users.nix
-    ./shells.nix
-    ./networking.nix
-    ./software.nix
-    ./services/cockpit.nix
-    ./services/glances.nix
-    ./services/fail2ban.nix
+    ./system/boot.nix
+    ./system/users.nix
+    ./system/shells.nix
+    ./system/software.nix
+
+    # applications
+    ./services/applications/cockpit.nix
+    ./services/monitoring/glances.nix
+
+    # security and edge
+    ./services/security/fail2ban.nix
+    ./services/edge/caddy.nix
 
     # connection
-    ./services/openssh.nix
-    ./services/tailscale.nix
-    ./services/caddy.nix
-    ./services/israel-ip-blocker.nix
+    ./networking/networking.nix
+    ./networking/firewall.nix
+    ./networking/openssh.nix
+    ./networking/tailscale.nix
+    ./networking/israel-ip-blocker.nix
   ];
 
   nix.settings.experimental-features = [

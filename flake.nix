@@ -17,8 +17,8 @@
             hostname = "phantom";
           };
           modules = [
-            ./configuration.nix
-            ./hosts/phantom/imports.nix
+            ./modules/common.nix
+            ./hosts/phantom/default.nix
             israel-ip-blocker.nixosModules.default
           ];
         };
@@ -29,8 +29,8 @@
             hostname = "specter";
           };
           modules = [
-            ./configuration.nix
-            ./hosts/specter/imports.nix
+            ./modules/common.nix
+            ./hosts/specter/default.nix
             israel-ip-blocker.nixosModules.default
           ];
         };
