@@ -18,6 +18,8 @@
     jq
     smartmontools
     lynis
+    rdfind
+    ethtool
   ];
 
   programs = {
