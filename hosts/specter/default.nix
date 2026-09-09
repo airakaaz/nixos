@@ -20,6 +20,7 @@
     # applications
     ../../modules/services/applications/vaultwarden.nix
     ../../modules/services/applications/stirling-pdf.nix
+    ../../modules/services/applications/affine.nix
 
     # virtualisation
     ../../modules/virtualisation/docker.nix

@@ -19,6 +19,7 @@
       "/var/lib/AdGuardHome"
       "/var/lib/caddy"
       "/var/lib/stirling-pdf"
+      "/var/lib/affine"
     ];
 
     extraBackupArgs = [
