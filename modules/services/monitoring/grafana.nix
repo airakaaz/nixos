@@ -15,6 +15,11 @@
     enable = true;
     port = 9090;
 
+    globalConfig = {
+      scrape_interval = "30s";
+      evaluation_interval = "30s";
+    };
+
     scrapeConfigs = [
       {
         job_name = "node";
