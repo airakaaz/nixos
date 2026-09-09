@@ -16,7 +16,7 @@
     filter = {
       Definition = {
         failregex = ".*AuthController - Invalid password for user: .* from IP: <HOST>.*";
-        journalmatch = "_SYSTEMD_UNIT=stirling-pdf.service";
+        journalmatch = "_SYSTEMD_UNIT=docker-stirling-pdf.service";
       };
     };
     settings = {
