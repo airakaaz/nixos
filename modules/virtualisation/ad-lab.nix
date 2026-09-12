@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   networking.bridges.virbr1.interfaces = [ ];
 
@@ -11,4 +13,6 @@
   virtualisation.libvirtd.allowedBridges = [ "virbr1" ];
 
   boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
+
+  environment.systemPackages = [ pkgs.passt ];
 }
