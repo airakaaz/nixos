@@ -303,7 +303,6 @@
             "Uptime Kuma" = {
               href = "https://up.kaaz.top/status/main";
               icon = "si-uptimekuma-#5CDD8B";
-              # description = "Service monitoring";
               widget = {
                 type = "uptimekuma";
                 url = "https://up.kaaz.top/";
@@ -319,7 +318,6 @@
             "AdGuard Home (phantom)" = {
               href = "https://p.dns.kaaz.top";
               icon = "si-adguard-#68BC71";
-              # description = "DNS and network filtering";
               widget = {
                 type = "adguard";
                 url = "https://p.dns.kaaz.top";
@@ -332,7 +330,6 @@
             "AdGuard Home (specter)" = {
               href = "https://s.dns.kaaz.top";
               icon = "si-adguard-#68BC71";
-              # description = "DNS and network filtering";
               widget = {
                 type = "adguard";
                 url = "https://s.dns.kaaz.top";
@@ -345,7 +342,6 @@
             Jellyfin = {
               href = "https://watch.kaaz.top";
               icon = "jellyfin";
-              # description = "Movies and shows";
               widget = {
                 type = "jellyfin";
                 url = "https://watch.kaaz.top";
@@ -363,7 +359,6 @@
             Immich = {
               href = "https://immich.kaaz.top";
               icon = "immich";
-              # description = "Photo library";
               widget = {
                 type = "immich";
                 url = "https://immich.kaaz.top";
@@ -376,7 +371,6 @@
             Stirling-PDF = {
               href = "https://pdf.kaaz.top";
               icon = "sh-stirling-pdf";
-              # description = "PDF editor";
               siteMonitor = "https://pdf.kaaz.top";
             };
           }
@@ -384,7 +378,6 @@
             AFFiNE = {
               href = "https://notes.kaaz.top";
               icon = "si-affine-#1E96EB";
-              # description = "PDF editor";
               siteMonitor = "https://notes.kaaz.top";
             };
           }
@@ -392,8 +385,14 @@
             Vaultwarden = {
               href = "https://vault.kaaz.top";
               icon = "si-vaultwarden";
-              # description = "Password manager";
               siteMonitor = "https://vault.kaaz.top";
+            };
+          }
+          {
+            Grafana = {
+              href = "https://dash.kaaz.top";
+              icon = "si-grafana-#F46800";
+              siteMonitor = "https://dash.kaaz.top";
             };
           }
         ];
