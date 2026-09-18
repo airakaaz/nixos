@@ -11,32 +11,6 @@
     };
   };
 
-  services.prometheus = {
-    enable = true;
-    port = 9090;
-
-    globalConfig = {
-      scrape_interval = "30s";
-      evaluation_interval = "30s";
-    };
-
-    scrapeConfigs = [
-      {
-        job_name = "node";
-        static_configs = [
-          {
-            targets = [
-              "aether:9099"
-              "phantom:9099"
-              "specter:9099"
-            ];
-          }
-        ];
-      }
-    ];
-  };
-
-
   services.caddy.virtualHosts."dash.kaaz.top".extraConfig = ''
     tls internal
     reverse_proxy localhost:3002

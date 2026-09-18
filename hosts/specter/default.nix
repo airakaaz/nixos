@@ -4,7 +4,7 @@
 
     # monitoring
     ../../modules/services/monitoring/uptime-kuma.nix
-    ../../modules/services/monitoring/prometheus-exporter.nix
+    ../../modules/services/monitoring/prometheus-master.nix
     ../../modules/services/monitoring/grafana.nix
     ../../modules/services/monitoring/loki.nix
     ../../modules/services/monitoring/alloy.nix

@@ -15,7 +15,7 @@
     ../../modules/virtualisation/ad-lab.nix
 
     # monitoring
-    ../../modules/services/monitoring/prometheus-exporter.nix
+    ../../modules/services/monitoring/prometheus-slave.nix
     ../../modules/services/monitoring/alloy.nix
 
     # networking
