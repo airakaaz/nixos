@@ -16,6 +16,7 @@
 
     # monitoring
     ../../modules/services/monitoring/prometheus-exporter.nix
+    ../../modules/services/monitoring/alloy.nix
 
     # networking
     ../../modules/networking/adguardhome.nix
