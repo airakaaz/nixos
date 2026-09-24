@@ -1,6 +1,6 @@
 {
   programs.ssh.knownHosts.phantom = {
-    extraHostNames = [ "100.64.0.1" ];
+    extraHostNames = [ "100.100.1.1" ];
     publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGyc3McUeBfsggm/sPlV1jtYQN5W8EjlKzY739Ln0q4O";
   };
 

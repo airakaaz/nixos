@@ -26,72 +26,72 @@
       filtering.rewrites = [
         {
           domain = "phantom.kaaz.top";
-          answer = "100.64.0.1";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "specter.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "aether.kaaz.top";
-          answer = "100.64.0.10";
+          answer = "100.100.2.1";
           enabled = true;
         }
         {
           domain = "watch.kaaz.top";
-          answer = "100.64.0.1";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "immich.kaaz.top";
-          answer = "100.64.0.1";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "qbt.kaaz.top";
-          answer = "100.64.0.1";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "vault.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "dash.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "p.dns.kaaz.top";
-          answer = "100.64.0.1";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "s.dns.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "up.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "home.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "pdf.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
         {
           domain = "notes.kaaz.top";
-          answer = "100.64.0.2";
+          answer = "100.100.1.2";
           enabled = true;
         }
       ];
