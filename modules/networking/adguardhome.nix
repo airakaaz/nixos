@@ -56,12 +56,12 @@
         }
         {
           domain = "vault.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "dash.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
@@ -71,27 +71,27 @@
         }
         {
           domain = "s.dns.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "up.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "home.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "pdf.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
         {
           domain = "notes.kaaz.top";
-          answer = "100.100.1.2";
+          answer = "100.100.1.1";
           enabled = true;
         }
       ];

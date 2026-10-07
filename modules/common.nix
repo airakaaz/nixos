@@ -8,7 +8,6 @@
 
     # applications
     ./services/applications/cockpit.nix
-    ./services/monitoring/glances.nix
 
     # security and edge
     ./services/security/fail2ban.nix

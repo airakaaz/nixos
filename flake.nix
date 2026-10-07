@@ -22,18 +22,6 @@
             israel-ip-blocker.nixosModules.default
           ];
         };
-
-        specter = nixpkgs.lib.nixosSystem {
-          system = "aarch64-linux";
-          specialArgs = {
-            hostname = "specter";
-          };
-          modules = [
-            ./modules/common.nix
-            ./hosts/specter/default.nix
-            israel-ip-blocker.nixosModules.default
-          ];
-        };
       };
     };
 }

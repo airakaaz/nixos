@@ -6,14 +6,20 @@
     repository = "/media/storage/phantom/restic/phantom";
 
     paths = [
-      "/var/lib/secrets"
-      "/var/lib/postgresql"
-      "/var/lib/immich"
-      "/var/lib/redis-immich"
-      "/var/lib/jellyfin"
-      "/var/lib/qBittorrent"
       "/var/lib/AdGuardHome"
+      "/var/lib/affine"
       "/var/lib/caddy"
+      "/var/lib/grafana"
+      "/var/lib/immich"
+      "/var/lib/jellyfin"
+      "/var/lib/postgresql"
+      "/var/lib/private/uptime-kuma"
+      "/var/lib/prometheus2"
+      "/var/lib/qBittorrent"
+      "/var/lib/redis-immich"
+      "/var/lib/secrets"
+      "/var/lib/stirling-pdf"
+      "/var/lib/vaultwarden"
     ];
 
     extraBackupArgs = [

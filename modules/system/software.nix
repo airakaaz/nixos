@@ -8,7 +8,6 @@
     ncdu
     net-tools
     nvtopPackages.intel
-    nvtopPackages.nvidia
     python3
     wget
     usbutils

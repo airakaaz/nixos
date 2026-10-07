@@ -12,7 +12,7 @@
   environment.etc."alloy/config.alloy".text = ''
     loki.write "default" {
       endpoint {
-        url = "http://specter:3100/loki/api/v1/push"
+        url = "http://phantom:3100/loki/api/v1/push"
       }
 
       wal {

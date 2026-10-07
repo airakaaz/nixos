@@ -27,4 +27,8 @@ in
     capabilities = "cap_perfmon+ep";
     source = "${btop-gpu}/bin/btop";
   };
+
+  environment.systemPackages = with pkgs; [
+    nvtopPackages.nvidia
+  ];
 }
