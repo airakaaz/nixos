@@ -5,6 +5,8 @@
     configuration = {
       auth_enabled = false;
 
+      analytics.reporting_enabled = false;
+
       server = {
         http_listen_address = "0.0.0.0";
         http_listen_port = 3100;

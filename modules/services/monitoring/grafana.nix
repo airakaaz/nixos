@@ -3,6 +3,11 @@
     enable = true;
 
     settings = {
+      analytics = {
+        reporting_enabled = false;
+        check_for_updates = false;
+        check_for_plugin_updates = false;
+      };
       server = {
         http_addr = "0.0.0.0";
         http_port = 3002;
