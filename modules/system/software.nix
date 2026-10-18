@@ -7,6 +7,8 @@
     home-manager
     ncdu
     net-tools
+    netwatch
+    bat
     nvtopPackages.intel
     python3
     wget
