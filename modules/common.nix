@@ -1,3 +1,4 @@
+{ lib, ... }:
 {
   imports = [
     # system
@@ -25,6 +26,15 @@
     "nix-command"
     "flakes"
   ];
+
+  nix.settings = {
+    substituters = lib.mkBefore [
+      "https://aseipp-nix-cache.global.ssl.fastly.net"
+    ];
+    trusted-substituters = [
+      "https://aseipp-nix-cache.global.ssl.fastly.net"
+    ];
+  };
 
   nix.gc = {
     automatic = true;
