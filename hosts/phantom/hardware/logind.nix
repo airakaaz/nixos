@@ -1,9 +1,9 @@
 {
   services.logind = {
     settings.Login = {
-      HandleLidSwitch = "ignore";
+      # HandleLidSwitch = "ignore";
       HandleLidSwitchDocked = "ignore";
-      HandleLidSwitchExternalPower = "ignore";
+      # HandleLidSwitchExternalPower = "ignore";
     };
   };
 }

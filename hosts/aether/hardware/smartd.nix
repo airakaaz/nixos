@@ -1,0 +1,16 @@
+{
+  services.smartd = {
+    enable = true;
+    autodetect = false;
+
+    defaults.monitored = "-a -o on -s (S/../.././02|L/../../7/04)";
+
+    devices = [
+      {
+        device = "/dev/mmcblk0";
+      }
+    ];
+
+    notifications.systembus-notify.enable = true;
+  };
+}

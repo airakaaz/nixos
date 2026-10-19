@@ -40,7 +40,7 @@
 
     remoteWrite = [
       {
-        url = "http://phantom:9090/api/v1/write";
+        url = "http://aether:9090/api/v1/write";
       }
     ];
   };
