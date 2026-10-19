@@ -3,7 +3,7 @@
     initialize = true;
     inhibitsSleep = true;
     passwordFile = "/var/lib/secrets/restic/restic-passwd";
-    repository = "/media/storage/phantom/restic/phantom";
+    repository = "aether:/media/storage/server/restic/phantom";
 
     paths = [
       "/var/lib/AdGuardHome"

@@ -2,7 +2,7 @@
   services.immich = {
     enable = true;
     port = 2283;
-    mediaLocation = "/media/storage/phantom/immich";
+    mediaLocation = "/media/storage/storage/immich";
     accelerationDevices = [
       "/dev/dri/renderD128"
       "/dev/dri/renderD129"
