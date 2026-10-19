@@ -11,6 +11,7 @@
       "jellyfin"
       "libvirtd"
       "kvm"
+      "wireshark"
     ];
     shell = pkgs.fish;
     linger = true;
