@@ -2,9 +2,9 @@
 
 let
   btop-gpu = pkgs.btop.overrideAttrs (old: {
-    nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [ pkgs.makeWrapper ];
+    nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [ pkgs.patchelf ];
     postFixup = (old.postFixup or "") + ''
-      wrapProgram $out/bin/btop --set LD_LIBRARY_PATH /run/opengl-driver/lib
+      patchelf --add-rpath /run/opengl-driver/lib $out/bin/btop
     '';
   });
 in
