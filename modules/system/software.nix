@@ -21,6 +21,10 @@
     lynis
     rdfind
     ethtool
+    iperf3
+    openssl
+    nmap
+    p7zip
   ];
 
   programs = {
