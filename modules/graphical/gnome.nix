@@ -2,11 +2,7 @@
 
 {
   services = {
-    displayManager.ly = {
-      enable = true;
-      settings.tty = 1;
-    };
-
+    displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
     xserver.enable = true;
   };

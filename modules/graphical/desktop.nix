@@ -4,6 +4,7 @@
   imports = [
     ./apps.nix
     ./fonts.nix
-    ./gnome.nix
+    # ./gnome.nix
+    ./cosmic.nix
   ];
 }
